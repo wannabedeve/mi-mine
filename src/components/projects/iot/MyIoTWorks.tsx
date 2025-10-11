@@ -31,11 +31,27 @@ const MyIoTWork: React.FC = () => {
                 onClose={() => setSelectedProject(null)}
                 title={selectedProject?.title}
             >
-                <img
-                    src={selectedProject?.link ? selectedProject?.link[0] : ""}
-                    alt={selectedProject?.title}
-                    className="w-full rounded-md mb-4"
-                />
+
+
+
+                {
+                    selectedProject?.link[0] && (
+
+                        <div className="relative w-full pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-md">
+
+
+                            <iframe
+                                src={selectedProject?.link[0] || ""}
+                                className="absolute top-0 left-0 w-full h-full"
+                                frameBorder="0"
+                                allowFullScreen
+                                title="Embedded post"
+                            ></iframe>
+
+                        </div>
+                    )
+                }
+
                 <p className="text-gray-700">{selectedProject?.description}</p>
 
                 {/* Optional: external link */}

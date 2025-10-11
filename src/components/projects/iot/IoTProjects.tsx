@@ -276,7 +276,7 @@ export const iotProjects: Project[] = [
         </>,
 
         imageUrl: "/assets/projects/iot/clang.png",
-        link: ["/assets/projects/iot/codeing.png"],
+        link: ["https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7187970862841532416?compact=1"],
     },
     // add more
 ];
