@@ -1,31 +1,31 @@
 // import { siteConfig } from "@/config/site";
 
 export const metadata = {
-  title: `About - Khaled AlKharashy`,
+  title: `Experience - Khaled AlKharashy`,
   authors: [
     {
       name: "Khaled AlKharashy",
-      url: "/about",
+      url: "/experience",
     },
   ],
   openGraph: {
     type: "website",
     // locale: "en_US",
-    url: "/about",
-    title: `About - Khaled AlKharashy`,
+    url: "/experience",
+    title: `Experience - Khaled AlKharashy`,
     description: "siteConfig.description",
     siteName: "siteConfig.name",
     images: ["siteConfig.ogImage"],
   },
   twitter: {
     card: "summary_large_image",
-    title: `About - AlKharashy`,
+    title: `Experience - AlKharashy`,
     description: "siteConfig.description",
     images: ["siteConfig.ogImage"],
     creator: "siteConfig.name",
   },
   alternates: {
-    canonical: "/about",
+    canonical: "/experience",
   },
 };
 

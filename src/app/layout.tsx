@@ -25,41 +25,41 @@ import HomeIcon from "@/components/homeIcon";
 
 export const metadata = {
   // metadataBase: new URL(siteConfig.url),
-  title: "siteConfig.title",
+  title: "Portfolio - Khaled AlKharashy",
   description: "siteConfig.description",
   keywords: "siteConfig.keywords",
   authors: [
     {
-      name: "siteConfig.name",
+      name: "Khaled AlKharashy",
       url: "",
     },
   ],
-  creator: "siteConfig.name",
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#31456A" },
-    { media: "(prefers-color-scheme: dark)", color: "#272B30" },
-  ],
+  creator: "Khaled AlKharashy",
+  // themeColor: [
+  //   { media: "(prefers-color-scheme: light)", color: "#31456A" },
+  //   { media: "(prefers-color-scheme: dark)", color: "#272B30" },
+  // ],
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
+    icon: "/k.png",
+    // shortcut: "/favicon-16x16.png",
+    // apple: "/apple-touch-icon.png",
   },
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "",
-    title: "siteConfig.title",
-    description: "siteConfig.description",
-    siteName: "siteConfig.name",
-    images: "[siteConfig.ogImage]",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "siteConfig.title",
-    description: "siteConfig.description",
-    images: "[siteConfig.ogImage]",
-    creator: "siteConfig.name",
-  },
+  // openGraph: {
+  //   type: "website",
+  //   locale: "en_US",
+  //   url: "",
+  //   title: "siteConfig.title",
+  //   description: "siteConfig.description",
+  //   siteName: "siteConfig.name",
+  //   images: "/k.png",
+  // },
+  // twitter: {
+  //   card: "summary_large_image",
+  //   title: "siteConfig.title",
+  //   description: "siteConfig.description",
+  //   images: "[siteConfig.ogImage]",
+  //   creator: "siteConfig.name",
+  // },
   manifest: "/site.webmanifest",
   viewport: "width=device-width, initial-scale=1.0, maximum-scale=1.0",
   alternates: {
@@ -92,6 +92,7 @@ export default function RootLayout({
           <div className="line"></div>
           <div className="line"></div>
 
+          <link rel="icon" href="/k.png" />
 
           {/* <Header /> */}
           {children}

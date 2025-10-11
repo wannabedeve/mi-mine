@@ -211,7 +211,7 @@ const ExpandingCardGrid: React.FC = () => {
 
                     <Check className="text-yellow-400 inline" /> {" "} Basics of other technologies
                     <br />
-                    JAVA SE, JAVA EE, Servlet, JSP, JDBC, EJB, Hibernate, Spring, Spring Boot, Tomcat
+                    JAVA SE, JAVA EE, Servlet, JSP, JDBC, EJB, Maven, Hibernate, Spring, Spring Boot, Tomcat
                     <br />
                     PHP: Laravel, CodeIgniter, WordPress
                     <br />

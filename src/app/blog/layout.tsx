@@ -1,18 +1,18 @@
 // import { siteConfig } from "@/config/site";
 
 export const metadata = {
-  title: `About - Khaled AlKharashy`,
+  title: `Blog - Khaled AlKharashy`,
   authors: [
     {
       name: "Khaled AlKharashy",
-      url: "/about",
+      url: "/blog",
     },
   ],
   openGraph: {
     type: "website",
     // locale: "en_US",
     url: "/about",
-    title: `About - Khaled AlKharashy`,
+    title: `Blog - Khaled AlKharashy`,
     description: "siteConfig.description",
     siteName: "siteConfig.name",
     images: ["siteConfig.ogImage"],
@@ -25,7 +25,7 @@ export const metadata = {
     creator: "siteConfig.name",
   },
   alternates: {
-    canonical: "/about",
+    canonical: "/blog",
   },
 };
 
