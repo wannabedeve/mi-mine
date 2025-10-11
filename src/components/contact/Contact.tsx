@@ -78,6 +78,8 @@ const ContactMe = () => {
         // <div className='contact-body'>
         <section id="hire" className='w-full mb-[2%]'>
             <br /><br /><br /><br />
+            <div className="reflect2 md:text-[1.2rem] text-[1rem]">Download Resume (PDF)</div>
+
             <Social />
             <br />
             <form onSubmit={handleSubmit}>

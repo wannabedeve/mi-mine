@@ -112,7 +112,7 @@ import Cert from "@/components/projects/network/Cert";
 import Social from "@/components/Social2/Social";
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
-// import './style.css';
+import './style.css';
 export default function About() {
     return (
         <>
@@ -182,6 +182,7 @@ export default function About() {
 
 
                 <div className="mt-[10rem]">
+                    <div className="reflect2 md:text-[1.2rem] text-[1rem]">Download Resume (PDF)</div>
 
                     <Social />
                 </div>
