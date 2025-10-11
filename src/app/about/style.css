@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative');
+
+
+
+.signt {
+    font-family: 'Cinzel Decorative';
+}
+
+.highlight {
+    color: #fdf0d5;
+    font-weight: 700;
+}
+
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #009E60;
+}
+
+/* .about-container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f24, #40f);
+    clip-path: circle(30% at 80% 90%);
+}
+
+.about-container:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#3876f3, #765e63);
+    clip-path: circle(20% at 25% 20%);
+} */
+
+.main-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 1200px; */
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100%;
+    z-index: 1;
+}
+
+.main-card {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 1200px; */
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.main-card {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.01);
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.main-content {
+    padding: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.main-content h3 {
+    font-size: 28px;
+    color: #fff;
+    z-index: 1;
+    /* margin-top: 22rem; */
+}
+
+.main-profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    /* top: 40%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    padding: 3px;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.5);
+    border-left: 5px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.01);
+    backdrop-filter: brightness(60%);
+}
+
+
+
+
+
+
+.about-glass {
+    background: rgba(255, 255, 255, .01);
+    /* border-radius: 16px; */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    /* padding: 2rem; */
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+
+.about-sticky {
+    font-family: 'Cinzel Decorative';
+    position: -webkit-sticky;
+    position: sticky;
+    top: 4rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    z-index: 50;
+}
