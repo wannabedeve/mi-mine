@@ -94,7 +94,8 @@ export default function StickyTabs() {
                             key={tab.id}
                             href={`#${tab.id}`}
                             className="et-hero-tab"
-                            ref={(el) => (tabsRef.current[i] = el)}
+                            // ref={(el) => (tabsRef.current[i] = el)}
+                            ref={(el) => { tabsRef.current[i] = el; }}
                             onClick={(e) => handleClick(e, tab.id)}
                         >
                             {tab.label}
@@ -118,7 +119,7 @@ export default function StickyTabs() {
                     <section key={tab.id} className="mb-[20%]" id={tab.id}>
                         {/* et-slide */}
                         {/* <h1>{tab.label}</h1> */}
-                        <h3>{tab.content}</h3>
+                        <div>{tab.content}</div>
                         <br /><br />
                         <hr />
                     </section>
