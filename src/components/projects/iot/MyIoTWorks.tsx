@@ -35,20 +35,25 @@ const MyIoTWork: React.FC = () => {
 
 
                 {
-                    selectedProject?.link[0] && (
+                    selectedProject?.link[0].startsWith("https") ? (
+                        <>
+                            <div className="relative w-full pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-md">
 
-                        <div className="relative w-full pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-md">
+
+                                <iframe
+                                    src={selectedProject?.link[0] || ""}
+                                    className="absolute top-0 left-0 w-full h-full"
+                                    frameBorder="0"
+                                    allowFullScreen
+                                    title="Embedded post"
+                                ></iframe>
+
+                            </div>
+                        </>
+                    ) : (
+                        <img src={selectedProject?.link as any} alt={selectedProject?.title} />
 
 
-                            <iframe
-                                src={selectedProject?.link[0] || ""}
-                                className="absolute top-0 left-0 w-full h-full"
-                                frameBorder="0"
-                                allowFullScreen
-                                title="Embedded post"
-                            ></iframe>
-
-                        </div>
                     )
                 }
 

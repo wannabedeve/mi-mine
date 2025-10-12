@@ -177,10 +177,17 @@ export default function About() {
                     but also with an understanding of pedagogy, user needs, and the importance of creating tools that truly
                     enhance the learning experience.
 
+
                 </p>
 
 
 
+                <br />
+                <div className='float-right'>
+
+                    <span className="signt">Best</span><br />
+                    <span className='signt'>Khaled A.</span>
+                </div>
                 <div className="mt-[10rem]">
                     <div className="reflect2 md:text-[1.2rem] text-[1rem]">Download Resume (PDF)</div>
 

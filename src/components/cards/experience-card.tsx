@@ -7,7 +7,7 @@ import './style.css';
 
 export default function ExperienceCard() {
   return (
-    <Link id="experience-card" aria-label="Experience" title="About" href="/experience">
+    <Link id="experience-card" aria-label="Experience" title="Experience" href="/experience">
       <Card className="card-text relative flex justify-center items-center flex-row text-primary dark:text-secondary text-3xl tracking-wide">
         Experience{" "}
         <div className="absolute top-0 right-0 p-6">
