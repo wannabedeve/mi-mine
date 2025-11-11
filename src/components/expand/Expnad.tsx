@@ -435,8 +435,8 @@ const ExpandingCardGrid: React.FC = () => {
                     {/* ⚡  */}
                     {/* <span className="text-green-600 text-2xl font-bold">✔</span> */}
 
-                    +2 Years of Combining my knowledge in embedded systems with full-stack development, I create end-to-end IoT solutions that interact seamlessly between devices and cloud interfaces.
 
+                    “Full-Stack Developer with a Background in Education & Psychology | Passionate about Building Human-Centered Learning Technologies”
                     <br />
                     <AstroDivider variant="default" />
 
