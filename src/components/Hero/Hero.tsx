@@ -19,7 +19,9 @@ export const Hero = () => {
                             <div className="componenth text-center">
                                 <div className="texth md:text-[2rem] text-[1rem]">Khaled A. Al-Kharashy</div>
                                 <br />
-                                <div className='texth text-[.8rem] font-semibold'>.NET Core | Javascript
+                                <div className='texth text-[.8rem] font-semibold'>Full Stack Javascript [Node, Nest, React, Next]
+                                    <br />
+                                    Strong base in other technologies [C, C#, PHP, JAVA]
                                     <br />
                                     Internet Of Things | Electronics</div><br />
                                 <div className='texth'>(+20) 1025 44 0707</div><br /><br />
