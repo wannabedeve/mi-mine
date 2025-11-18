@@ -21,12 +21,12 @@ export const Hero = () => {
                                 <br />
                                 <div className='texth text-[.8rem] font-semibold'>Full Stack Javascript
                                     <br />
-                                    [Node, Nest, React, Next]
+                                    [ Node, Nest, React, Next ]
                                     <br />
                                     <br />
                                     Strong base in other technologies
                                     <br />
-                                    [C, C#, PHP, JAVA]
+                                    [ C, C#, PHP, JAVA ]
                                     <br />
                                     <br />
                                     Internet Of Things | Electronics</div><br />
