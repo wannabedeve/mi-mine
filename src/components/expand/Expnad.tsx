@@ -478,7 +478,7 @@ const ExpandingCardGrid: React.FC = () => {
         <div className="wrapper">
             <div className="header">
                 <h1 className="header__title font-mono">
-                    I combine software, electronics, and IoT expertise to deliver complete and scalable solutions.
+                    Software Development, VoiP, Electronics, and IoT expertise to deliver complete and scalable solutions.
                 </h1>
                 <br />
                 <h2 className="header__subtitle">
