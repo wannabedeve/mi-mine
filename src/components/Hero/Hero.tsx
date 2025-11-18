@@ -29,7 +29,13 @@ export const Hero = () => {
                                     [ C, C#, PHP, JAVA ]
                                     <br />
                                     <br />
-                                    Internet Of Things | Electronics</div><br />
+                                    Other Fields
+                                    <br />
+                                    Internet Of Things
+                                    <br />
+                                    VoiP
+                                    <br />
+                                    Electronics</div><br />
                                 <div className='texth'>(+20) 1025 44 0707</div><br /><br />
                                 <div className="reflect md:text-[1.2rem] text-[1rem]">Download Resume (PDF)</div>
                                 <Social />
