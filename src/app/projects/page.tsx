@@ -7,7 +7,10 @@ import { Card } from "@/components/ui/card";
 export default function Projects() {
   return (
     <Card className="glass relative flex flex-col text-white w-full xs:w-9/12 h-full p-6 xs:p-12">
-      <SectionTitle title="Projects" progressBgClass="bg-primary"></SectionTitle>
+      <div className="items-center">
+
+        <SectionTitle title="Projects" progressBgClass="bg-primary"></SectionTitle>
+      </div>
       <StickyTabs />
 
       {/* <MyWebWork />

@@ -91,7 +91,7 @@ h1 {
     /* font-size: 4rem; */
     font-family: 'Cinzel Decorative';
 
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     color: white;
     margin: 0px;
 }
@@ -401,4 +401,105 @@ h1 {
 .link a {
     /* color: #000; */
     /* font-size: 25px; */
+}
+
+
+
+
+.gradient-line {
+    margin: 0 0 50px 0;
+    display: block;
+    border: none;
+    height: 1px;
+    background: #0071B9;
+    background: linear-gradient(to right, white, #0071B9, #26ABFF, #0071B9, white);
+}
+
+
+
+
+.headhe {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    &:before,
+    &:after {
+        content: "";
+        flex-grow: 1;
+        height: 1px;
+    }
+
+    &:before {
+        margin-right: 1%;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), currentColor);
+    }
+
+    &:after {
+        background: linear-gradient(to left, rgba(255, 255, 255, 0), currentColor);
+    }
+
+    span {
+        padding: 0 1em;
+    }
+}
+
+
+
+
+// Presentational stuff
+
+@import url(https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,900);
+
+
+
+
+// body {
+//     width: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     background: url(https://s.cdpn.io/3/blurry-blue.jpg);
+//     color: rgba(255, 255, 255, 0.75);
+//     background-size: cover;
+//     font-family: Georgia, serif;
+//     line-height: 1.5;
+// }
+
+main {
+    flex-grow: 1;
+    max-width: 960px;
+    padding: 0 1em;
+    text-align: center;
+}
+
+.headhe {
+    font-family: 'Cinzel Decorative', cursive;
+    text-shadow: 0 0 20px currentColor;
+    animation: glow 3s infinite;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 1em currentColor;
+    }
+
+    50% {
+        text-shadow: 0 0 0.25em currentColor;
+    }
+
+    100% {
+        text-shadow: 0 0 1em currentColor;
+    }
+}
+
+.linka {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    transition: color 0.175s;
+
+    &:hover {
+        color: rgba(255, 255, 255, 1);
+    }
 }

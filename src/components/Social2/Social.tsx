@@ -1,25 +1,25 @@
 import React from 'react'
 import './style.scss'; // Ensure you have the CSS file for styles
+import CVButtons from '../buttons/butn';
 
 const Social = () => {
     return (
         <div className=''>
 
             <br /><br /><br />
-            <div className='cv-container'>
-                {/* <span className='pulse-button'>pulse</span> */}
+            {/* <div className='cv-container'> */}
+            {/* <span className='pulse-button'>pulse</span> */}
 
 
-                <a className="pulse-button relative" href="/khaled-alkharashi-full-stack-web-developer-resume.pdf"
+            {/* <a className="pulse-button relative" href="/khaled-alkharashi-full-stack-web-developer-resume.pdf"
                     download="khaled-alkharashi-full-stack-web-developer-resume.pdf"
-                    target="_blank">
+                    target="_blank"> */}
 
 
 
 
-
-                    {/* cv */}
-                    <svg xmlns="http://www.w3.org/2000/svg"
+            {/* cv */}
+            {/* <svg xmlns="http://www.w3.org/2000/svg"
                         width="30" height="30" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor"
                         strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"
@@ -32,11 +32,11 @@ const Social = () => {
 
 
 
-                </a>
+                </a> */}
 
 
 
-            </div>
+            {/* </div> */}
 
             <ul className="list w-screen h-[8rem]">
                 <li className="list__item">
@@ -71,6 +71,7 @@ const Social = () => {
                     </a>
                 </li>
             </ul>
+            <CVButtons />
 
 
         </div>

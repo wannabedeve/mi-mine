@@ -38,13 +38,13 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                                 <div className="absolute flex h-10 w-10 items-center justify-center rounded-full">
                                     <div className="h-4 w-4 rounded-full border-4 border-slate-100 bg-cyan-700 p-2" />
                                 </div>
-                                <h3 className="hidden text-xl font-bold text-slate-400 md:block md:pl-20 md:text-3xl">
+                                <h3 className="hidden text-xl font-bold text-slate-800 md:block md:pl-20 md:text-3xl">
                                     {item.title}
                                 </h3>
                             </div>
 
                             <div className="relative w-full pl-10 pr-4">
-                                <h3 className="mb-4 block text-left text-2xl font-bold text-neutral-500 md:hidden">
+                                <h3 className="mb-4 block text-left text-2xl font-bold text-neutral-800 md:hidden">
                                     {item.title}
                                 </h3>
                                 {/* force a unique key inside to silence any nested key issues */}
@@ -69,7 +69,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                             opacity: opacityTransform,
                         }}
                         className="absolute inset-x-0 top-0 w-[2px] rounded-full 
-                       bg-gradient-to-t from-cyan-500 via-white to-transparent"
+                       bg-gradient-to-t from-slate-800 via-white to-transparent"
                     />
                 </div>
             </div>

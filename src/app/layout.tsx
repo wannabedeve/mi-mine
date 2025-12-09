@@ -25,16 +25,16 @@ import HomeIcon from "@/components/homeIcon";
 
 export const metadata = {
   // metadataBase: new URL(siteConfig.url),
-  title: "Portfolio - Khaled AlKharashy",
+  title: "Portfolio - Khaled AlKharashi",
   description: "siteConfig.description",
   keywords: "siteConfig.keywords",
   authors: [
     {
-      name: "Khaled AlKharashy",
+      name: "Khaled AlKharashi",
       url: "",
     },
   ],
-  creator: "Khaled AlKharashy",
+  creator: "Khaled AlKharashi",
   // themeColor: [
   //   { media: "(prefers-color-scheme: light)", color: "#31456A" },
   //   { media: "(prefers-color-scheme: dark)", color: "#272B30" },

@@ -5,7 +5,7 @@ import Work from "@/components/Work/Work";
 
 export default function Experience() {
   return (
-    <Card className="glass relative flex flex-col text-white w-full xs:w-9/12 h-full p-6 xs:p-12">
+    <Card className="glass relative flex flex-col items-center text-white w-full xs:w-9/12 h-full p-6 xs:p-12">
       <h1 className="text-primary dark:text-secondary text-4xl tracking-wide mb-6">
         <SectionTitle title="Experience" progressBgClass="bg-primary"></SectionTitle>
 

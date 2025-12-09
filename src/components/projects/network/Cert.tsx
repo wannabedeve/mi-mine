@@ -11,7 +11,7 @@ const Cert = () => {
 
 
 
-            <div className="topz mx-auto mt-[5%] ml-[20%]">
+            <div className="topz mx-auto mt-[5%]">
                 <ul className="flex flex-col">
                     <li><a href="#img_1"><img src="/cert/c1.jpeg" className="" /></a></li>
                     <br />

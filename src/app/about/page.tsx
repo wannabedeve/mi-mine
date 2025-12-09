@@ -121,12 +121,14 @@ export default function About() {
 
 
             <Card className="glass relative flex flex-col items-center w-full xs:w-9/12 h-full p-6 xs:p-12">
-                <h1 className="text-white tracking-wide mb-6">
+
+                <h1 className="tracking-wide mb-6">
 
                     <SectionTitle title="About" progressBgClass="bg-primary"></SectionTitle>
 
                 </h1>
 
+                <p className="text-center texth">Khaled AlKharashi</p>
 
 
 
@@ -144,8 +146,8 @@ export default function About() {
                 </div>
 
 
-                <p className="leading-loose text-center font-serif text-xl font-light text-slate-400">
-                    I’m a Full-Stack Web Developer with expertise in React, Next.js, TypeScript, Node.js (NestJS/Express),
+                <p className="leading-loose text-center font-mono text-xl font-light text-slate-800">
+                    {/* I’m a Full-Stack Web Developer with expertise in React, Next.js, TypeScript, Node.js (NestJS/Express),
                     and .NET Core (C# + MSSQL),
                     <br />
                     building modern, scalable applications ranging from e-commerce platforms and APIs to CMS-driven websites
@@ -175,8 +177,30 @@ export default function About() {
                     where I see technology as a bridge to improve accessibility, engagement, and personalized learning.
                     My background in education allows me to approach edtech solutions not only from a technical perspective
                     but also with an understanding of pedagogy, user needs, and the importance of creating tools that truly
-                    enhance the learning experience.
+                    enhance the learning experience. */}
 
+
+                    <p className="text-center texth">AS Full Stack Web Developer</p>
+
+                    Full-Stack Web & Web Solutions Developer with real-world experience delivering enterprise-level applications
+                    and IoT-integrated solutions. Worked on projects in Egypt, United Arab Emirates to digitize services and
+                    streamline business processes. Strong expertise in JavaScript, Typescript frameworks and libraries
+                    (Node.js, Nest.js, React, Next.js), with experience in cloud platforms (AWS, Google Cloud) and
+                    database management (MongoDB, MySQL, PostgreSQL).
+                    <br />
+                    Additional exposure to Java and C# .NET technologies. Skilled in building scalable, secure,
+                    and interactive web solutions that integrate frontend, backend, and IoT/cloud services.
+
+                    <br /><br />
+                    <p className="text-center texth">And AS System Administator</p>
+                    I'm Highly motivated IT professional with a solid background in electronics, networking, VoIP systems,
+                    and IoT  integrations, supported by hands-on experience in technical support and infrastructure operations.
+                    Skilled in  managing and troubleshooting network devices, system hardware, and software environments,
+                    as well as  configuring and maintaining LAN/WAN, routers, switches, and VoIP solutions. Adept at diagnosing
+                    complex  technical issues, performing preventive maintenance, and delivering reliable support for daily
+                    IT operations. With  strong problem-solving skills and a foundation in IoT and low-level technologies,
+                    I bring a practical and  analytical approach to system administration tasks. Known for working effectively
+                    under pressure, quickly  resolving issues, and ensuring stable and secure IT environments.
 
                 </p>
 
@@ -188,11 +212,11 @@ export default function About() {
                     <span className="signt">Best</span><br />
                     <span className='signt'>Khaled A.</span>
                 </div>
-                <div className="mt-[10rem]">
-                    <div className="reflect2 md:text-[1.2rem] text-[1rem]">Download Resume (PDF)</div>
+                {/* <div className="mt-[10rem]"> */}
+                {/* <div className="reflect2 md:text-[1.2rem] text-[1rem]">Download Resume (PDF)</div> */}
 
-                    <Social />
-                </div>
+                <Social />
+                {/* </div> */}
 
                 <Cert />
                 <br />

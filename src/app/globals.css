@@ -178,15 +178,40 @@ body {
   --grid-size: 30px;
 }
 
+/* 
 body {
   margin: 0;
   height: 100vh;
-  background-color: #0d0d0d;
-  /* or any base color */
-  background-image:
+  background-color: #0d0d0d; */
+/* or any base color */
+/* background-image:
     linear-gradient(var(--grid-color) 1px, transparent 1px),
     linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
   background-size: var(--grid-size) var(--grid-size);
+} */
+
+
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(https://s.cdpn.io/3/blurry-blue.jpg) no-repeat center center;
+  background-attachment: fixed;
+
+  background-size: cover;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: Georgia, serif;
+  line-height: 1.5;
 }
 
 

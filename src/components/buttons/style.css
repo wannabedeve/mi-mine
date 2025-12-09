@@ -8,22 +8,26 @@
 
 .b-link {
     position: relative;
+    font-family: 'Courier New', Courier, monospace;
     display: inline-block;
     padding: 1.2rem 2rem;
     margin: 1.5rem;
-    color: #03e9f4;
+    color: gold;
     text-decoration: none;
     text-transform: uppercase;
     transition: 0.5s;
     letter-spacing: 4px;
     overflow: hidden;
-    font-size: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
     border-radius: 4px;
 }
 
 .b-link:hover {
     background: #03e9f4;
     color: #050801;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
     box-shadow: 0 0 5px #03e9f4,
         0 0 25px #03e9f4,
         0 0 50px #03e9f4,
@@ -31,13 +35,13 @@
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 
-.b-link:nth-child(1) {
+/* .b-link:nth-child(1) {
     filter: hue-rotate(270deg);
 }
 
 .b-link:nth-child(2) {
     filter: hue-rotate(110deg);
-}
+} */
 
 .b-link span {
     position: absolute;
@@ -127,7 +131,7 @@
     }
 }
 
-/* 🧩 Responsive Adjustments */
+/* Responsive Adjustments */
 @media (max-width: 1024px) {
     .b-link {
         padding: 1rem 1.6rem;
@@ -155,4 +159,29 @@
         font-size: 0.85rem;
         letter-spacing: 1.5px;
     }
+}
+
+
+
+
+.texthh {
+    /* font-size: 4rem; */
+    font-family: 'Cinzel Decorative';
+
+    letter-spacing: 3px;
+    color: white;
+    margin: 0px;
+}
+
+.reflectt {
+    /* font-size: 4rem; */
+    font-family: 'Cinzel Decorative';
+    letter-spacing: 1px;
+    background: linear-gradient(cyan, white, cyan);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* transform: rotateX(180deg); */
+    margin-top: 15px;
+    font-weight: bold;
+    /* opacity: 90%; */
 }

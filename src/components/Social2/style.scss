@@ -88,59 +88,84 @@
 
 
 
-.cv-container {
-  width: 85px;
-  height: 100%;
-  margin: 0 auto;
-  border-radius: 50%;
-  perspective: 1000px;
-  backface-visibility: hidden;
-  background: #fff;
-}
 
-.pulse-button {
-  position: relative;
-  top: 58%;
-  left: 58%;
-  margin-left: -49px;
-  margin-top: -49px;
-  display: block;
-  width: 85px;
-  height: 85px;
-  font-size: 1.3em;
-  font-weight: 300;
-  font-family: 'Trebuchet MS', sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 100px;
-  letter-spacing: -1px;
+.texth {
+  /* font-size: 4rem; */
+  font-family: 'Cinzel Decorative';
+
+  letter-spacing: 3px;
   color: white;
-  border: none;
-  border-radius: 50%;
-  background: #5a99d4;
-  cursor: pointer;
-  box-shadow: 0 0 0 0 rgba(90, 153, 212, 0.5);
-  animation: pulse 1.5s infinite;
-  transition: transform 0.2s ease;
+  margin: 0px;
 }
 
-.pulse-button:hover {
-  animation: none;
-  transform: scale(1.05);
+.reflect {
+  /* font-size: 4rem; */
+  font-family: 'Cinzel Decorative';
+  letter-spacing: 1px;
+  background: linear-gradient(cyan, white, cyan);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* transform: rotateX(180deg); */
+  margin-top: 15px;
+  font-weight: bold;
+  /* opacity: 90%; */
 }
 
-@keyframes pulse {
-  0% {
-    transform: scale(0.9);
-  }
 
-  70% {
-    transform: scale(1);
-    box-shadow: 0 0 0 50px rgba(90, 153, 212, 0);
-  }
 
-  100% {
-    transform: scale(0.9);
-    box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
-  }
-}
+// .cv-container {
+//   width: 85px;
+//   height: 100%;
+//   margin: 0 auto;
+//   border-radius: 50%;
+//   perspective: 1000px;
+//   backface-visibility: hidden;
+//   background: #fff;
+// }
+
+// .pulse-button {
+//   position: relative;
+//   top: 58%;
+//   left: 58%;
+//   margin-left: -49px;
+//   margin-top: -49px;
+//   display: block;
+//   width: 85px;
+//   height: 85px;
+//   font-size: 1.3em;
+//   font-weight: 300;
+//   font-family: 'Trebuchet MS', sans-serif;
+//   text-transform: uppercase;
+//   text-align: center;
+//   line-height: 100px;
+//   letter-spacing: -1px;
+//   color: white;
+//   border: none;
+//   border-radius: 50%;
+//   background: #5a99d4;
+//   cursor: pointer;
+//   box-shadow: 0 0 0 0 rgba(90, 153, 212, 0.5);
+//   animation: pulse 1.5s infinite;
+//   transition: transform 0.2s ease;
+// }
+
+// .pulse-button:hover {
+//   animation: none;
+//   transform: scale(1.05);
+// }
+
+// @keyframes pulse {
+//   0% {
+//     transform: scale(0.9);
+//   }
+
+//   70% {
+//     transform: scale(1);
+//     box-shadow: 0 0 0 50px rgba(90, 153, 212, 0);
+//   }
+
+//   100% {
+//     transform: scale(0.9);
+//     box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
+//   }
+// }

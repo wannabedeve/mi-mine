@@ -161,13 +161,13 @@ export default function Work() {
             content: (
                 <div>
                     <p className="mb-8 text-xs font-normal exp-work md:text-sm">
-                        <span className="text-slate-400 text-xl font-semibold">
+                        <span className="text-slate-800 text-xl font-semibold">
                             Full Stack Developer
                         </span>
                         <br />
                         <br />
                         Jan 2024 - Present. Check it out{' '}
-                        <Link href={'/projects'} className="text-green-700 font-extrabold no-underline">
+                        <Link href={'/projects'} target='_blank' className="text-slate-800 hover:underline font-extrabold no-underline">
                             Click here to visit
                         </Link>
                         <br />
@@ -223,13 +223,13 @@ export default function Work() {
             content: (
                 <div>
                     <p className="mb-8 text-xs font-normal exp-work md:text-sm">
-                        <span className="text-slate-400 text-xl font-semibold">
+                        <span className="text-slate-800 text-xl font-semibold">
                             Network Support Engineer
                         </span>
                         <br />
                         <br />
                         2022 - 2024. Check it out{' '}
-                        <Link href={'/projects'} className="text-green-700 font-extrabold no-underline">
+                        <Link href={'/projects'} target='_blank' className="text-slate-800 hover:underline font-extrabold no-underline">
                             Click here to visit
                         </Link>
                         <br />
@@ -296,13 +296,13 @@ export default function Work() {
             content: (
                 <div>
                     <p className="mb-8 text-xs font-normal exp-work md:text-sm">
-                        <span className="text-slate-400 text-xl font-semibold">
+                        <span className="text-slate-800 text-xl font-semibold">
                             IoT Apps Developer / Web Developer
                         </span>
                         <br />
                         <br />
                         2020 - 2022. Check it out{' '}
-                        <Link href={'/projects'} className="text-green-700 font-extrabold no-underline">
+                        <Link href={'/projects'} target='_blank' className="text-slate-800 hover:underline font-extrabold no-underline">
                             Click here to visit
                         </Link>
                         <br />
@@ -374,13 +374,13 @@ export default function Work() {
             content: (
                 <div>
                     <p className="mb-8 text-xs font-normal exp-work md:text-sm">
-                        <span className="text-slate-400 text-xl font-semibold">
+                        <span className="text-slate-800 text-xl font-semibold">
                             Electronics Technician
                         </span>
                         <br />
                         <br />
                         2016 - 2020. Check it out{' '}
-                        <Link href={'/projects'} className="text-green-700 font-extrabold no-underline">
+                        <Link href={'/projects'} target='_blank' className="text-slate-800 hover:underline font-extrabold no-underline">
                             Click here to visit
                         </Link>
                         <br />
@@ -427,7 +427,7 @@ export default function Work() {
             content: (
                 <div>
                     <p className="mb-8 text-xs font-normal exp-work md:text-sm">
-                        <span className="text-slate-400 text-xl font-semibold">
+                        <span className="text-slate-800 text-xl font-semibold">
                             Education & Training Specialist
                         </span>
                         <br />
