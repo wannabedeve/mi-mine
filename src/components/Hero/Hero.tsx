@@ -1,5 +1,6 @@
 // import React from 'react'
 import Social from '../Social2/Social'
+import { DrawSVG } from '../SVGCoder/Draw'
 import './style.scss'
 // import Social from '../Social2/Social'
 
@@ -11,13 +12,13 @@ export const Hero = () => {
                 {/* <h1>Hello, world!</h1>
 
                 <p>Let me give you a wave...</p> */}
-                <main>
+                <main className='mmi'>
+                    {/* <hr className="gradient-line" /> */}
                     <h1 className='headhe'>
                         {/* <span>Reinventing the wheel</span> */}
                         <div className="texth md:text-[2rem] text-[.9rem]">Khaled A. Al-Kharashy
 
 
-                            {/* <hr className="gradient-line" /> */}
                         </div>
                     </h1>
                     <br />
@@ -27,6 +28,10 @@ export const Hero = () => {
                         IT System Administrator
                     </div><br />
                     <div className='texth'>(+20) 1025 44 0707</div><br /><br />
+
+
+                    <DrawSVG />
+                    <br /><br />
                     <div className='md:-mt-[12%] -mt-[32%]'>
 
                         <Social />

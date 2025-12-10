@@ -146,7 +146,7 @@ export default function About() {
                 </div>
 
 
-                <p className="leading-loose text-center font-mono text-xl font-light text-slate-800">
+                <div className="leading-loose text-center font-mono text-xl font-light text-slate-800">
                     {/* I’m a Full-Stack Web Developer with expertise in React, Next.js, TypeScript, Node.js (NestJS/Express),
                     and .NET Core (C# + MSSQL),
                     <br />
@@ -180,29 +180,30 @@ export default function About() {
                     enhance the learning experience. */}
 
 
-                    <p className="text-center texth">AS Full Stack Web Developer</p>
-
-                    Full-Stack Web & Web Solutions Developer with real-world experience delivering enterprise-level applications
-                    and IoT-integrated solutions. Worked on projects in Egypt, United Arab Emirates to digitize services and
-                    streamline business processes. Strong expertise in JavaScript, Typescript frameworks and libraries
-                    (Node.js, Nest.js, React, Next.js), with experience in cloud platforms (AWS, Google Cloud) and
-                    database management (MongoDB, MySQL, PostgreSQL).
-                    <br />
-                    Additional exposure to Java and C# .NET technologies. Skilled in building scalable, secure,
-                    and interactive web solutions that integrate frontend, backend, and IoT/cloud services.
-
+                    <div className="text-center texth">AS Full Stack Web Developer</div>
+                    <div className="bg-white/20">
+                        Full-Stack Web & Web Solutions Developer with real-world experience delivering enterprise-level applications
+                        and IoT-integrated solutions. Worked on projects in Egypt, United Arab Emirates to digitize services and
+                        streamline business processes. Strong expertise in JavaScript, Typescript frameworks and libraries
+                        (Node.js, Nest.js, React, Next.js), with experience in cloud platforms (AWS, Google Cloud) and
+                        database management (MongoDB, MySQL, PostgreSQL).
+                        <br />
+                        Additional exposure to Java and C# .NET technologies. Skilled in building scalable, secure,
+                        and interactive web solutions that integrate frontend, backend, and IoT/cloud services.
+                    </div>
                     <br /><br />
-                    <p className="text-center texth">And AS System Administator</p>
-                    I'm Highly motivated IT professional with a solid background in electronics, networking, VoIP systems,
-                    and IoT  integrations, supported by hands-on experience in technical support and infrastructure operations.
-                    Skilled in  managing and troubleshooting network devices, system hardware, and software environments,
-                    as well as  configuring and maintaining LAN/WAN, routers, switches, and VoIP solutions. Adept at diagnosing
-                    complex  technical issues, performing preventive maintenance, and delivering reliable support for daily
-                    IT operations. With  strong problem-solving skills and a foundation in IoT and low-level technologies,
-                    I bring a practical and  analytical approach to system administration tasks. Known for working effectively
-                    under pressure, quickly  resolving issues, and ensuring stable and secure IT environments.
-
-                </p>
+                    <div className="text-center texth">And AS System Administator</div>
+                    <div className="bg-white/20">
+                        I'm Highly motivated IT professional with a solid background in electronics, networking, VoIP systems,
+                        and IoT  integrations, supported by hands-on experience in technical support and infrastructure operations.
+                        Skilled in  managing and troubleshooting network devices, system hardware, and software environments,
+                        as well as  configuring and maintaining LAN/WAN, routers, switches, and VoIP solutions. Adept at diagnosing
+                        complex  technical issues, performing preventive maintenance, and delivering reliable support for daily
+                        IT operations. With  strong problem-solving skills and a foundation in IoT and low-level technologies,
+                        I bring a practical and  analytical approach to system administration tasks. Known for working effectively
+                        under pressure, quickly  resolving issues, and ensuring stable and secure IT environments.
+                    </div>
+                </div>
 
 
 

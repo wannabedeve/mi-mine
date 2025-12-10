@@ -4,6 +4,7 @@ import "./globals.css";
 import { classMerge } from "@/lib/utils";
 import Header from "@/components/Header";
 import HomeIcon from "@/components/homeIcon";
+import { Footer } from "@/components/Footer/Footer";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -97,6 +98,7 @@ export default function RootLayout({
           {/* <Header /> */}
           {children}
           <HomeIcon />
+          <Footer />
         </main>
 
         {/* <GoogleTagManagerNoScript /> */}

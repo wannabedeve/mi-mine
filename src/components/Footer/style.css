@@ -1,0 +1,9 @@
+.gradient-linee {
+    /* margin: 0 0 50px 0; */
+    display: block;
+    border: none;
+    height: 2px;
+    background: yellow;
+    /* color: yellow; */
+    background: linear-gradient(to right, white, yellow, goldenrod, yellow, white);
+}

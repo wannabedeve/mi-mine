@@ -466,11 +466,12 @@ h1 {
 //     line-height: 1.5;
 // }
 
-main {
+main.mmi {
     flex-grow: 1;
     max-width: 960px;
     padding: 0 1em;
     text-align: center;
+    margin: auto;
 }
 
 .headhe {
