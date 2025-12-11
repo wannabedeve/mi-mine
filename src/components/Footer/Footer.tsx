@@ -1,7 +1,7 @@
 import './style.css';
 export const Footer = () => {
-    return (
-        <footer className="w-full text-center mt-[10%] text-[1rem] mb-[30%] bg-white/10">
+    return (<>
+        <footer className="w-[70%] mx-auto text-center mt-[5%] text-[1rem] bg-white/10">
             <hr className="gradient-linee" />
             <br />
             <p className='texth'>© {new Date().getFullYear()} <br />Khaled AlKharashy. Portfolio Website.</p>
@@ -12,5 +12,6 @@ export const Footer = () => {
             <hr className="gradient-linee" />
 
         </footer>
-    );
+        <br />
+    </>);
 }

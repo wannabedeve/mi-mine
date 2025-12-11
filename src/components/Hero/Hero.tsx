@@ -30,8 +30,8 @@ export const Hero = () => {
                     <div className='texth'>(+20) 1025 44 0707</div><br /><br />
 
 
-                    <DrawSVG />
-                    <br /><br />
+                    {/* <DrawSVG /> */}
+                    {/* <br /><br /> */}
                     <div className='md:-mt-[12%] -mt-[32%]'>
 
                         <Social />
