@@ -26,7 +26,7 @@ export default function Home() {
 
 
     <>
-      <div className="mt-[5rem]" data-aos="fade-up">
+      <div className="mt-[5rem]" data-aos="zoom-in">
 
         <Hero />
       </div>
@@ -35,28 +35,28 @@ export default function Home() {
           <div
             className="grid grid-cols-1 md:grid-cols-2 gap-10 xs:gap-12 md:gap-14"
           >
-            <div className="glass" data-aos="fade-up">
+            <div className="glass" data-aos="fade-right">
 
               <AboutCard />
             </div>
-            <div className="glass" data-aos="fade-up">
+            <div className="glass" data-aos="fade-left">
 
               <SkillsCard />
             </div>
-            <div className="glass" data-aos="fade-up">
+            <div className="glass" data-aos="fade-right">
 
               <ExperienceCard />
             </div>
-            <div className="glass" data-aos="fade-up">
+            <div className="glass" data-aos="fade-left">
 
               <ProjectCard />
             </div>
 
-            <div className="glass" data-aos="fade-up">
+            <div className="glass" data-aos="fade-right">
 
               <ContactCard />
             </div>
-            <div className="glass" data-aos="fade-up">
+            <div className="glass" data-aos="fade-left">
 
               <BlogCard />
             </div>
