@@ -35,28 +35,28 @@ export default function Home() {
           <div
             className="grid grid-cols-1 md:grid-cols-2 gap-10 xs:gap-12 md:gap-14"
           >
-            <div className="glass" data-aos="fade-right">
+            <div className="glass" data-aos="fade-up">
 
               <AboutCard />
             </div>
-            <div className="glass" data-aos="fade-left">
+            <div className="glass" data-aos="fade-up">
 
               <SkillsCard />
             </div>
-            <div className="glass" data-aos="fade-right">
+            <div className="glass" data-aos="fade-up">
 
               <ExperienceCard />
             </div>
-            <div className="glass" data-aos="fade-left">
+            <div className="glass" data-aos="fade-up">
 
               <ProjectCard />
             </div>
 
-            <div className="glass" data-aos="fade-right">
+            <div className="glass" data-aos="fade-up">
 
               <ContactCard />
             </div>
-            <div className="glass" data-aos="fade-left">
+            <div className="glass" data-aos="fade-up">
 
               <BlogCard />
             </div>
