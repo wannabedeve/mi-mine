@@ -1,0 +1,354 @@
+// // @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+// .social-icons-root {
+//   display: grid;
+//   place-items: center;
+//   padding: 40px;
+// //   background: linear-gradient(315deg, #ffffff, #d7e1ec);
+// //   font-family: "Poppins", sans-serif;
+
+// color: black;
+//   .wrapper {
+//     display: inline-flex;
+//     list-style: none;
+//     margin: 0;
+//     padding: 0;
+//   }
+
+//   .icon {
+//     position: relative;
+//     width: 56px;
+//     height: 56px;
+//     margin: 10px;
+//     border-radius: 50%;
+//     background: #ffffff;
+//     color: rgba(1, 8, 15, 0.788);
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+
+//     cursor: pointer;
+//     box-shadow: 0 12px 18px rgba(0, 0, 0, 0.12);
+//     transition: transform 0.25s ease, background-color 0.25s ease;
+
+//     filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.08));
+//   }
+
+//   .social-icon-svg {
+//     width: 32px;
+//     height: 32px;
+//     fill: currentColor;
+
+//     shape-rendering: geometricPrecision;
+//     text-rendering: geometricPrecision;
+
+//     transform: translateZ(0);
+//     transition: transform 0.25s ease;
+//   }
+
+//   .icon:hover .social-icon-svg {
+//     transform: scale(1.15);
+//   }
+
+//   .tooltip {
+//     position: absolute;
+//     top: -42px;
+//     font-size: 14px;
+//     padding: 6px 10px;
+//     border-radius: 6px;
+//     background: inherit;
+//     color: #fff;
+//     opacity: 0;
+//     pointer-events: none;
+//     transition: opacity 0.2s ease, transform 0.2s ease;
+//     transform: translateY(4px);
+//     white-space: nowrap;
+//   }
+
+//   .tooltip::after {
+//     content: '';
+//     position: absolute;
+//     left: 50%;
+//     bottom: -4px;
+//     width: 8px;
+//     height: 8px;
+//     background: inherit;
+//     transform: translateX(-50%) rotate(45deg);
+//   }
+
+//   .icon:hover .tooltip {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+
+//   /* Brand Colors */
+//   .linkedin:hover {
+//     background: #0a66c2;
+//     color: #fff;
+//   }
+
+//   .github:hover {
+//     background: #24292e;
+//     color: #fff;
+//   }
+
+//   .gmail:hover {
+//     background: #ea4335;
+//     color: #fff;
+//   }
+
+//   .whatsapp:hover {
+//     background: #25d366;
+//     color: #fff;
+//   }
+// }
+
+
+
+
+// // dowload btn
+
+
+// a.shiny-button {
+//   width: fit-content;
+//   position: relative;
+//   margin: 1rem;
+//   padding: 1rem 1.5rem;
+//   color: rgb(207, 248, 255);
+//   border: 3px solid transparent;
+//   border-radius: 10px;
+//   background-color: rgb(6, 69, 73);
+//   background-image: linear-gradient(to bottom right, rgb(10,107,115), rgb(2, 10, 14)), linear-gradient(125deg, rgba(255,255,255,0) 45%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 53%);
+//   background-origin: border-box;
+//   background-clip: padding-box, border-box;
+//   background-size: 100%, 200%;
+//   background-position: 0px, -250px;
+//   animation: 4s border-glint linear backwards infinite;
+//   animation-delay: 1s;
+//   box-shadow: rgba(0,0,0,0.6) 8px 8px 8px;
+//   text-shadow: 0px 0px 4px rgba(255,255,255,0.1);
+//   transition: box-shadow 0.25s, text-shaddw 0.25s;
+//   overflow: hidden;
+//   white-space: nowrap;
+// }
+
+// a.shiny-button:hover {
+//   cursor: pointer;
+//   background-image: linear-gradient(to bottom right, rgb(155, 168, 193), rgb(24, 77, 177)), linear-gradient(125deg, rgba(255,255,255,0) 45%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 53%);
+//   color: rgb(250, 250, 255);
+//   box-shadow: rgba(0,0,0,0.7) 5px 5px 5px;
+//   text-shadow: 0px 0px 3px rgba(255,255,255,0.7);
+//   transition: box-shadow 0.25s, text-shaddw 0.25s;
+// }
+
+// a.shiny-button::after {
+//   content: ' ';
+//   position: absolute;
+//   top: -50%;
+//   left: -120%;
+//   width: 200%;
+//   height: 200%;
+//   background-image: linear-gradient(125deg, rgba(255,255,255,0) 30%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 52%);
+//   animation: 4s glint linear backwards infinite;
+//   animation-delay: -3s;
+// }
+
+// @keyframes glint {
+//   0% { left: -120%; }
+//   8% { left: 50%; }
+//   100% { left: 50%; }
+// }
+
+
+// @keyframes border-glint {
+//   0% { background-position: 0px, -250px; }
+//   25% { background-position: 0px, -200px; }
+//   75% { background-position: 0px, 50px; }
+//   100% { background-position: 0px, 50px; }
+// }
+/* ===== CV Buttons ===== */
+.cv-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 640px) {
+  .cv-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shiny-button {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+  }
+}
+
+/* ===== Social Icons ===== */
+.social-icons-root {
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* ===== Icon Base ===== */
+.icon {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #fff;
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.social-icon-svg {
+  width: 32px;
+  height: 32px;
+  fill: currentColor;
+  transition: transform 0.25s ease;
+}
+
+.icon:hover .social-icon-svg {
+  transform: scale(1.15);
+}
+
+/* ===== Tooltip ===== */
+.tooltip {
+  position: absolute;
+  top: -42px;
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  background: inherit;
+  color: #fff;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  transform: translateY(4px);
+  white-space: nowrap;
+}
+
+.icon:hover .tooltip {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .tooltip {
+    display: none;
+  }
+
+  .icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .social-icon-svg {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .social-icon-svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* ===== Brand Colors ===== */
+.linkedin:hover { background: #0a66c2; color: #fff; }
+.github:hover { background: #24292e; color: #fff; }
+.gmail:hover { background: #ea4335; color: #fff; }
+.whatsapp:hover { background: #25d366; color: #fff; }
+
+/* ===== Shiny Button (unchanged logic, responsive-safe) ===== */
+.shiny-button {
+  position: relative;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  
+  background-color: rgb(6, 69, 73);
+  background-image: linear-gradient(to bottom right, rgb(10,107,115), rgb(2, 10, 14)), linear-gradient(125deg, rgba(255,255,255,0) 45%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 53%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-size: 100%, 200%;
+  background-position: 0px, -250px;
+  animation: 4s border-glint linear backwards infinite;
+  animation-delay: 1s;
+  box-shadow: rgba(0,0,0,0.6) 8px 8px 8px;
+  text-shadow: 0px 0px 4px rgba(255,255,255,0.1);
+  transition: box-shadow 0.25s, text-shaddw 0.25s;
+  
+  // background: linear-gradient(to bottom right, #0a6b73, #020a0e);
+  color: #e9fbff;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  overflow: hidden;
+}
+
+
+a.shiny-button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to bottom right, rgb(155, 168, 193), rgb(24, 77, 177)), linear-gradient(125deg, rgba(255,255,255,0) 45%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 53%);
+  color: rgb(250, 250, 255);
+  box-shadow: rgba(0,0,0,0.7) 5px 5px 5px;
+  text-shadow: 0px 0px 3px rgba(255,255,255,0.7);
+  transition: box-shadow 0.25s, text-shaddw 0.25s;
+}
+
+a.shiny-button::after {
+  content: ' ';
+  position: absolute;
+  top: -50%;
+  left: -120%;
+  width: 200%;
+  height: 200%;
+  background-image: linear-gradient(125deg, rgba(255,255,255,0) 30%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 52%);
+  animation: 4s glint linear backwards infinite;
+  animation-delay: -3s;
+}
+
+@keyframes glint {
+  0% { left: -120%; }
+  8% { left: 50%; }
+  100% { left: 50%; }
+}
+
+
+@keyframes border-glint {
+  0% { background-position: 0px, -250px; }
+  25% { background-position: 0px, -200px; }
+  75% { background-position: 0px, 50px; }
+  100% { background-position: 0px, 50px; }
+}

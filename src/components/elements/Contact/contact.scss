@@ -1,0 +1,308 @@
+@use "sass:color";
+@use "sass:math";
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative');
+
+
+
+@mixin grid($column) {
+    width: math.div(100%, 7) * $column;
+    margin: 0 auto;
+}
+
+
+// Transition Ease
+@mixin ease($time: 333ms, $attr: all, $curve: ease-in-out) {
+    -webkit-transition: $attr $time $curve;
+    -moz-transition: $attr $time $curve;
+    -o-transition: $attr $time $curve;
+    -ms-transition: $attr $time $curve;
+    transition: $attr $time $curve;
+}
+
+
+
+// Colors
+$blue: #313A3D;
+$orange: #FD9638;
+$dark-orange: color.adjust($orange, $lightness: -20%);
+$grey: #B6B6B6;
+$light-grey: color.adjust($grey, $lightness: 15%);
+$background: #efefef;
+$field-color: #E8E9EA;
+
+
+
+.text-footer {
+
+    font-family: 'Cinzel Decorative';
+}
+
+.contact-body {
+    background: $background;
+    font-size: 1rem;
+    // height: 100vh;
+      min-height: 100vh;
+
+
+    color: $grey;
+
+    .contact-section {
+        background: white;
+        margin: 60px auto 120px;
+        border-top: 15px solid $blue;
+        text-align: center;
+        padding: 50px 0 110px;
+        width: 80%;
+        // max-width: 1100px;
+
+        .contact-h1 {
+            margin-bottom: 40px;
+            font-size: 1em;
+            
+        }
+    }
+}
+
+// Form
+.contact-form {
+    // @include grid(7);
+    
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+
+
+
+    .contact-field {
+        width: 100%;
+        position: relative;
+        margin-bottom: 15px;
+        font-weight: 700;
+        $hover-label-width: 18%;
+        $placeholder-bumper: 1.5%;
+        $label-padding: 18px;
+
+        // Label
+        .contact-label {
+            // text-transform: uppercase;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: $blue;
+            width: 100%;
+            padding: ($label-padding + 0px) 0;
+            font-size: .7em;
+            letter-spacing: 0.075em;
+
+            @include ease(333ms);
+
+            // Checkmark
+            +span {
+                font-family: 'SSStandard';
+                opacity: 0;
+                color: white;
+                display: block;
+                position: absolute;
+                top: 12px;
+                left: 7%;
+                font-size: 1em;
+                text-shadow: 1px 2px 0 $dark-orange;
+
+                @include ease(333ms);
+            }
+        }
+
+        // Fields
+        .contact-input[type="text"],
+        .contact-textarea {
+            border: none;
+            background: $field-color;
+                width: calc(100% - #{$hover-label-width} - #{$placeholder-bumper});
+
+            margin: 0;
+            padding: $label-padding 0;
+                padding-left: calc(#{$hover-label-width} + #{$placeholder-bumper});
+
+            color: $blue;
+            font-size: .7em;
+            letter-spacing: 0.05em;
+            // text-transform: uppercase;
+
+            &#msg {
+                height: 18px;
+                resize: none;
+                @include ease(333ms);
+            }
+
+            // Focus and JS Toggle Class
+            &:focus,
+            &.focused {
+                outline: none;
+
+                &#msg {
+                    padding-bottom: 150px;
+                }
+
+                +label {
+                    width: $hover-label-width;
+                    background: $orange;
+                    color: $blue;
+                }
+            }
+
+            // JS Toggle Class
+            &.focused {
+                +label {
+                    color: white;
+                }
+            }
+        }
+
+        // Field Hover
+        &:hover {
+            .contact-label {
+                width: $hover-label-width;
+                background: $blue;
+                color: white;
+            }
+        }
+    }
+
+    // Submit Button
+    .contact-input[type="submit"] {
+        background: $orange;
+        color: white;
+        -webkit-appearance: none;
+        border: none;
+        // text-transform: uppercase;
+        position: relative;
+        padding: 13px 50px;
+        font-size: 1.4em;
+        letter-spacing: 0.1em;
+        // @include lato-3;
+        @include ease;
+
+        &:hover {
+            background: $blue;
+            color: $orange;
+        }
+
+        &:focus {
+            outline: none;
+            background: $dark-orange;
+        }
+    }
+}
+
+
+
+
+.text-c {
+    font-family: 'Cinzel Decorative';
+    color: black;
+    /* font-size: 15rem !important; */
+    letter-spacing: 5px;
+    /* color: white; */
+    margin: 0px;
+    padding: 1rem 2rem;
+
+}
+
+
+
+
+.reflect3 {
+    /* font-size: 4rem; */
+    font-family: 'Cinzel Decorative';
+    letter-spacing: 1px;
+    background: linear-gradient(cyan, orange, cyan);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* transform: rotateX(180deg); */
+    margin-top: 15px;
+    font-weight: bold;
+    /* opacity: 90%; */
+}
+
+
+
+.contact-section {
+  position: relative;
+  padding: 16rem 1.5rem;
+//   background: #000;
+  overflow: hidden;
+}
+
+
+.contact-section::before {
+  content: "";
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+
+  background: url("https://i.imgur.com/Qk4UXcU.png") repeat-x;
+  background-size: 200% 100%;
+
+  box-shadow:
+    inset -140px 0 160px rgba(0, 0, 0, 0.85),
+    inset 140px 0 160px rgba(0, 0, 0, 0.85),
+    inset 0 -60px 100px rgba(0, 255, 255, 0.25),
+    0 0 80px rgba(0, 255, 255, 0.35);
+
+  animation: earthRotate 60s linear infinite;
+}
+
+@keyframes earthRotate {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: 3000px;
+  }
+}
+.contact-content {
+  position: relative;
+  z-index: 1;
+  max-width: 640px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .contact-section::before {
+    margin-top: 10%;
+    width: 420px;
+    height: 420px;
+    opacity: 0.7;
+  }
+}
+
+
+// .contact-section::before {
+//   content: "";
+//   position: absolute;
+
+//   width: 700px;
+//   height: 700px;
+
+//   left: 50%;
+//   top: 50%;
+//   transform: translate(-50%, -50%);
+
+//   border-radius: 50%;
+//   background: url("https://i.imgur.com/Qk4UXcU.png") repeat-x;
+//   background-size: auto 100%;
+
+//   opacity: 0.25;
+
+//   box-shadow:
+//     inset 0 -40px 80px rgba(0, 255, 255, 0.35),
+//     0 0 60px rgba(0, 255, 255, 0.35);
+
+//   animation: earthRotate 50s linear infinite;
+// }
+
+

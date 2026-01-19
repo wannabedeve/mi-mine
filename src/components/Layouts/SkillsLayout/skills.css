@@ -1,0 +1,312 @@
+/* ===============================
+   Config & Variables
+================================ */
+:root {
+  --bg: #080808;
+  --text-muted: #444;
+  --text-light: #e5e5e5;
+  --accent: #d4c5a3;
+
+  timeline-scope: --s1, --s2, --s3, --s4, --s5, --s6;
+}
+
+/* ===============================
+   Base / Reset
+================================ */
+
+.sk-body {
+  /* margin: 0; */
+  margin-top: -80%;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: clip; /* STRONGER than hidden */
+  background: var(--bg);
+  color: var(--text-light);
+  font-family: "Manrope", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===============================
+   Sticky Visual (Desktop)
+================================ */
+.sticky-visual {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100svh; /* mobile-safe */
+  display: grid;
+  place-items: center;
+  z-index: 10;
+  pointer-events: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+}
+
+/* ===============================
+   Shapes Container
+================================ */
+.shape-container {
+  position: absolute;
+  width: clamp(200px, 60vw, 400px);
+  height: clamp(200px, 60vw, 400px);
+  display: grid;
+  place-items: center;
+  opacity: 0;
+
+  animation-name: shape-fade;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Timeline bindings */
+.shape-1 { animation-timeline: --s1; }
+.shape-2 { animation-timeline: --s2; }
+.shape-3 { animation-timeline: --s3; }
+.shape-4 { animation-timeline: --s4; }
+.shape-5 { animation-timeline: --s5; }
+.shape-6 { animation-timeline: --s6; }
+
+/* ===============================
+   Content (Left)
+================================ */
+.content {
+  width: 50%;
+  padding-bottom: 20svh;
+  position: relative;
+  z-index: 20;
+}
+
+/* min-height: 90svh; */
+/* header {
+  display: flex;
+  align-items: center;
+  padding-left: 10vw;
+} */
+
+.scroll-section {
+  min-height: 70svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10vw;
+  padding-right: 2rem;
+
+  view-timeline-axis: block;
+  view-timeline-inset: 40% 40%;
+}
+
+/* Timeline names */
+.s1 { view-timeline-name: --s1; }
+.s2 { view-timeline-name: --s2; }
+.s3 { view-timeline-name: --s3; }
+.s4 { view-timeline-name: --s4; }
+.s5 { view-timeline-name: --s5; }
+.s6 { view-timeline-name: --s6; }
+
+.closing-section {
+  min-height: 60svh;
+  display: flex;
+  align-items: center;
+  padding-left: 10vw;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  /* margin-top: 10svh; */
+}
+
+/* ===============================
+   Typography
+================================ */
+/* .sk-h1 {
+  font-size: 1.5rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0;
+  color: var(--accent);
+  opacity: 0.8;
+} */
+
+/* .title-large {
+  display: block;
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1;
+} */
+
+.focus-text {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 600;
+  line-height: 1.1;
+  color: white;
+  max-width: 32rem;
+  margin: 0;
+
+  animation: content-focus linear both;
+  animation-timeline: view();
+  animation-range: cover 0% cover 100%;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: white;
+  /* margin-top: 1.5rem; */
+  max-width: 26rem;
+  line-height: 1.7;
+  font-weight: 300;
+  border-left: 2px solid var(--accent);
+  padding-left: 1.5rem;
+
+  animation: content-focus linear both;
+  animation-timeline: view();
+  animation-range: cover 0% cover 100%;
+}
+
+/* ===============================
+   Shapes (Responsive)
+================================ */
+.circle-outline,
+.grid-lines,
+.balance,
+.light-orb {
+  width: clamp(180px, 55vw, 300px);
+  height: clamp(180px, 55vw, 300px);
+}
+
+.circle-outline {
+  border: 2px solid var(--text-light);
+  border-radius: 50%;
+  box-shadow: 0 0 60px rgba(255, 255, 255, 0.05);
+}
+
+.stone-block {
+  width: clamp(180px, 55vw, 260px);
+  height: clamp(240px, 65vw, 340px);
+  background: linear-gradient(135deg, #333, #111);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-lines {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.balance {
+  position: relative;
+}
+
+.b-circle {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  mix-blend-mode: exclusion;
+}
+
+/* ===============================
+   Progress Indicators
+================================ */
+/* .desktop-progress {
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--accent);
+  transform-origin: top;
+  transform: scaleY(0);
+  animation: progress-grow linear;
+  animation-timeline: scroll();
+} */
+
+/* ===============================
+   Animations
+================================ */
+@keyframes shape-fade {
+  entry 0% { opacity: 0; transform: translateY(40px) scale(0.7); }
+  entry 100% { opacity: 1; transform: none; }
+  exit 100% { opacity: 0; transform: translateY(-40px) scale(1.1); }
+}
+
+@keyframes content-focus {
+  0% { opacity: 0; transform: scale(0.5) translateY(40px); }
+  50% { opacity: 1; transform: none; }
+  100% { opacity: 0; transform: scale(0.95) translateY(-40px); }
+}
+
+/* @keyframes progress-grow {
+  to { transform: scaleY(1); }
+} */
+
+/* ===============================
+   Mobile Fix (CRITICAL)
+================================ */
+@media (max-width: 768px) {
+  .sticky-visual {
+    position: absolute; /* FIX */
+    inset: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.12;
+    border-left: none;
+  }
+
+  .content {
+    width: 100%;
+    margin-left: 1.5rem;
+  }
+
+  .scroll-section,
+  .closing-section {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .desktop-progress {
+    display: none;
+  }
+
+  .focus-text{
+    color: var(--accent);
+  }
+
+  
+.system-icon {
+  width: clamp(180px, 55vw, 300px);
+  height: clamp(180px, 55vw, 300px);
+  stroke: var(--accent);
+  stroke-width: 2;
+
+  animation-name: shape-fade;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+}
+
+
+
+
+.system-icon {
+  width: clamp(180px, 55vw, 300px);
+  height: clamp(180px, 55vw, 300px);
+  stroke: var(--accent);
+  stroke-width: 2;
+
+  animation-name: shape-fade;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Timeline bindings already exist */
+/* .shape-1 { animation-timeline: --s1; }
+.shape-2 { animation-timeline: --s2; }
+.shape-3 { animation-timeline: --s3; }
+.shape-4 { animation-timeline: --s4; }
+.shape-5 { animation-timeline: --s5; }
+.shape-6 { animation-timeline: --s6; } */
+
+
+

@@ -1,0 +1,502 @@
+
+
+
+// @import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative');
+
+// .logo {
+//   position: relative;
+//   display: inline-block;
+//   text-align: center;
+//   white-space: nowrap;         // always one line
+//   overflow: hidden;            // keep cursor inside
+//   font-weight: 700;
+//   text-transform: uppercase;
+//   font-family: 'Amiri', serif;
+//   letter-spacing: 0.12em;
+//   text-shadow: 0 0 12px rgba(16, 3, 33, 0.6), 0 0 24px rgba(28, 16, 1, 0.3);
+
+//   /* responsive font-size with clamp() */
+//   font-size: clamp(1.5rem, 6vw, 4rem);
+
+//   color: slategray;
+//   -webkit-text-stroke: 0.05em #f7f7fe;
+// }
+
+// .logo::before {
+//   content: attr(data-text);
+//   position: absolute;
+//   inset: 0;
+//   color: black;
+//   text-align: center;
+
+//   width: 0;
+//   overflow: hidden;
+//   white-space: nowrap;
+
+//   border-right: 2px solid yellowgreen;
+//   -webkit-text-stroke: 0;
+
+//   animation: animate 6s linear infinite;
+// }
+
+
+
+
+
+// .headhe {
+//   // font-family: 'Cinzel Decorative', cursive;
+//     font-family: 'Amiri', serif;
+
+//   letter-spacing: 0.12em;
+//   text-shadow:
+//     0 0 12px rgba(16, 3, 33, 0.6),
+//     0 0 24px rgba(28, 16, 1, 0.3);
+// }
+
+
+// @keyframes animate {
+//   0%,
+//   10% {
+//     width: 0;
+//   }
+
+//   70%,
+//   90% {
+//     width: 100%;
+//   }
+
+//   100% {
+//     width: 0;
+//   }
+// }
+
+
+// //second section
+
+// $imageURL: "https://picsum.photos/id/190/1920/1080";
+// $dur: 2s;
+// $ease: cubic-bezier(0.85, 0, 0.15, 1);
+
+
+// .quote {
+//   text-align: center;
+//   font-size: 2rem;
+//   white-space: nowrap;
+  
+//   blockquote {
+//     position: relative;
+//     display: inline-block;
+//     margin: 0;
+//   }
+  
+//   p {
+//     line-height: 1.1;
+//     font-family: 'Amiri', serif;
+//     text-transform: uppercase;
+
+//     span {
+//       display: block;
+//     }
+//   }
+  
+//   .cut-text-container {
+//     background-color: #fff;
+//     position: relative;
+//     z-index: 1;
+//     padding: 0px 50px;
+    
+//     animation: moveCutClip $dur $ease infinite alternate;
+    
+//     .cut-text {
+//       background-image: url(#{$imageURL});
+//       margin: 0;
+//     }
+    
+//     span {
+//       color: #000;
+//       mix-blend-mode: lighten;
+//       background-color: #fff;
+//     }
+//   }
+  
+//   .colored-text {
+//     color: #fff;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     animation: moveTopColoredClip $dur $ease infinite alternate;
+    
+//     &.second {
+//       top: 50%;
+//       animation: moveBottomColoredClip $dur $ease infinite alternate;
+//     }
+//   }
+  
+//   figcaption {
+//     // line-height: 0.4;
+//   }
+//   cite {
+//     font-style: normal;
+//     font-family: 'Nunito', sans-serif;
+//     font-size: 0.4em;
+//     color: #fff;
+//     text-transform: uppercase;
+//     letter-spacing: 0.2em;
+    
+//     animation: fadeInAuthor $dur $ease infinite alternate;
+//   }
+// }
+
+// @keyframes moveCutClip {
+//   0%, 25% {
+//     clip-path: polygon(35px 0%, 100% 0%, calc(100% - 35px) 50%, 0% 50%);
+//   }
+//   75%, 100% {
+//     clip-path: polygon(35px 50%, 100% 50%, calc(100% - 35px) 100%, 0% 100%);
+//   }
+// }
+
+// @keyframes moveTopColoredClip {
+//   0%, 25% {
+//     clip-path: polygon(35px -100%, 100% -100%, calc(100% - 35px) 0%, 0% 0%);
+//   }
+//   75%, 100% {
+//     clip-path: polygon(35px 00%, 100% 0%, calc(100% - 35px) 100%, 0% 100%);
+//   }
+// }
+
+// @keyframes moveBottomColoredClip {
+//   0%, 25% {
+//     clip-path: polygon(35px 0%, 100% 0%, calc(100% - 35px) 100%, 0% 100%);
+//   }
+//   75%, 100% {
+//     clip-path: polygon(35px 100%, 100% 100%, calc(100% - 35px) 200%, 0% 200%);
+//   }
+// }
+
+// @keyframes fadeInAuthor {
+//   0%, 25% {
+//     opacity: 0;
+//   }
+//   75%, 100% {
+//     opacity: 1;
+//   }
+// }
+
+
+
+// @media (max-width: 768px) {
+//   .logo {
+//     font-size: 1.5rem;
+//   white-space: nowrap;
+
+//   }
+
+//   .quote {
+//     font-size: 1.3rem;
+//   white-space: nowrap;
+
+//   }
+// }
+
+
+
+// // Shimmer header
+// .shimmer {
+//   font-size: 4em;
+//   font-weight: 700;
+//   text-align: center;
+//   color: transparent; /* very important for background-clip */
+//   background: linear-gradient(
+//     to right,
+//     #222 0%,
+//     #fff 50%,
+//     #222 100%
+//   );
+//   background-size: 200% 100%;
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+//   animation: shimmer 10s infinite linear;
+//   margin-bottom: 2rem;
+// }
+
+// // Shimmer animation
+// @keyframes shimmer {
+//   0% {
+//     background-position: -200% 0;
+//   }
+//   100% {
+//     background-position: 200% 0;
+//   }
+// }
+
+
+
+
+
+
+// .section {
+//   height: 50vh;
+//   width: 100vw;
+//   position: relative;   /* critical */
+//   display: flex;
+//   justify-content: center;
+// }
+
+// /* shared title styles */
+// .title {
+//   position: sticky;
+//   align-self: flex-start;
+//   text-transform: uppercase;
+//   font-weight: 700;
+
+// }
+
+// /* individual offsets */
+// .one {
+//   top: 10vh;
+// }
+
+// .two {
+//   top: 35vh;
+// }
+
+// .three {
+//   top: 60vh;
+// }
+
+
+// @media (max-width: 768px) {
+//   .one { top: 15vh; }
+//   .two { top: 30vh; }
+//   .three { top: 45vh; }
+// }
+
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative');
+@import url('https://fonts.googleapis.com/css?family=Amiri&display=swap');
+
+$dur: 2s;
+$ease: cubic-bezier(0.85, 0, 0.15, 1);
+$imageURL: "https://picsum.photos/id/190/1920/1080";
+
+/* =================================
+   LOGO
+================================= */
+
+.logo {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap; // keep in one line
+  overflow: hidden;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Amiri', serif;
+  letter-spacing: 0.12em;
+  text-shadow: 0 0 12px rgba(16, 3, 33, 0.6), 0 0 24px rgba(28, 16, 1, 0.3);
+  font-size: clamp(1.5rem, 6vw, 4rem);
+  color: slategray;
+  -webkit-text-stroke: 0.05em #f7f7fe;
+
+  &::before {
+    content: attr(data-text);
+    position: absolute;
+    inset: 0;
+    color: black;
+    text-align: center;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid yellowgreen;
+    -webkit-text-stroke: 0;
+    animation: animate 6s linear infinite;
+  }
+}
+
+@keyframes animate {
+  0%, 10% { width: 0; }
+  70%, 90% { width: 100%; }
+  100% { width: 0; }
+}
+
+/* =================================
+   HEADINGS
+================================= */
+
+.headhe {
+  font-family: 'Amiri', serif;
+  letter-spacing: 0.12em;
+  text-shadow: 0 0 12px rgba(16, 3, 33, 0.6), 0 0 24px rgba(28, 16, 1, 0.3);
+}
+
+/* =================================
+   QUOTE SECTION
+================================= */
+
+.quote {
+  text-align: center;
+  font-size: clamp(1.3rem, 4vw, 2rem);
+  white-space: nowrap;
+
+  blockquote {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+  }
+
+  p {
+    line-height: 1.2;
+    font-family: 'Amiri', serif;
+    text-transform: uppercase;
+
+    span { display: block; }
+  }
+
+  .cut-text-container {
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    padding: 0 5vw; // responsive padding
+    animation: moveCutClip $dur $ease infinite alternate;
+
+    .cut-text {
+      background-image: url(#{$imageURL});
+      margin: 0;
+    }
+
+    span {
+      color: #000;
+      mix-blend-mode: lighten;
+      background-color: #fff;
+    }
+  }
+
+  .colored-text {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: moveTopColoredClip $dur $ease infinite alternate;
+
+    &.second {
+      top: 50%;
+      animation: moveBottomColoredClip $dur $ease infinite alternate;
+    }
+  }
+
+  cite {
+    font-style: normal;
+    font-family: 'Nunito', sans-serif;
+    font-size: clamp(0.8em, 1vw, 0.6em);
+    color: #d4c5a3;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    animation: fadeInAuthor $dur $ease infinite alternate;
+  }
+}
+
+
+
+@keyframes moveCutClip {
+  0%, 25% { clip-path: polygon(35px 0%, 100% 0%, calc(100% - 35px) 50%, 0% 50%); }
+  75%, 100% { clip-path: polygon(35px 50%, 100% 50%, calc(100% - 35px) 100%, 0% 100%); }
+}
+
+@keyframes moveTopColoredClip {
+  0%, 25% { clip-path: polygon(35px -100%, 100% -100%, calc(100% - 35px) 0%, 0% 0%); }
+  75%, 100% { clip-path: polygon(35px 0%, 100% 0%, calc(100% - 35px) 100%, 0% 100%); }
+}
+
+@keyframes moveBottomColoredClip {
+  0%, 25% { clip-path: polygon(35px 0%, 100% 0%, calc(100% - 35px) 100%, 0% 100%); }
+  75%, 100% { clip-path: polygon(35px 100%, 100% 100%, calc(100% - 35px) 200%, 0% 200%); }
+}
+
+@keyframes fadeInAuthor {
+  0%, 25% { opacity: 0; }
+  75%, 100% { opacity: 1; }
+}
+
+/* =================================
+   SHIMMER EFFECT
+================================= */
+
+.shimmer {
+  font-size: clamp(2rem, 8vw, 4em);
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: 700;
+  text-align: center;
+  color: transparent;
+  background: linear-gradient(to right, #222 0%, #fff 50%, #222 100%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 10s infinite linear;
+  margin-bottom: 2rem;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* =================================
+   STICKY TITLES SECTION
+================================= */
+
+.section {
+  height: 50vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  position: sticky;
+  align-self: flex-start;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  color: #d4c5a3;
+  font-size: clamp(1rem, 4vw, 1.5rem);
+}
+.one{
+  margin-top: -15%;
+}
+.two, .three {
+  width: 80%;
+}
+/* individual offsets */
+.one { top: 10vh; }
+.two { top: 35vh; }
+.three { top: 60vh; }
+.one, .two, .three{
+  // margin-top: -15%;
+}
+/* responsive offsets */
+@media (max-width: 768px) {
+  .logo { font-size: clamp(1.2rem, 8vw, 2rem); }
+  .quote { font-size: clamp(1.3rem, 5vw, 1.3rem); }
+  .shimmer { font-size: clamp(1.5rem, 10vw, 3rem); }
+
+  .one { top: 15vh; }
+  .two { top: 30vh; }
+  .three { top: 45vh; }
+}
+
+
+
+.points-home{
+  // flex flex-row gap-6 justify-center items-center
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+
+  
+}

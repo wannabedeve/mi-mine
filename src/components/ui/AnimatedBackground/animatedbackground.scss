@@ -1,0 +1,27 @@
+.particle-bg-image {
+    position: absolute;
+    inset: 0;
+    background: url('/images/other/bg.webp') center / cover no-repeat;
+    z-index: 0;
+}
+
+.particle-bg-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45); // adjust
+    z-index: 1;
+}
+canvas {
+    z-index: 2;
+}
+.particle-bg-overlay {
+    background: linear-gradient(
+        180deg,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.2)
+    );
+}
+.particle-bg-image {
+    filter: blur(0) brightness(0.4);
+    // transform: scale(1.05);
+}
