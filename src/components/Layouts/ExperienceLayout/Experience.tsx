@@ -274,9 +274,6 @@ export default function ExperienceLayout() {
                     </section>
                 ))}
                 <p>
-                    IT / Network / Electronics Experience
-
-                    Infrastructure, VoIP, hardware repair
                 </p>
             </main>
         </>

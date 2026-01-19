@@ -349,7 +349,7 @@ $imageURL: "https://picsum.photos/id/190/1920/1080";
   p {
     line-height: 1.2;
     font-family: 'Amiri', serif;
-    text-transform: uppercase;
+    // text-transform: uppercase;
 
     span { display: block; }
   }
@@ -458,7 +458,7 @@ $imageURL: "https://picsum.photos/id/190/1920/1080";
 .title {
   position: sticky;
   align-self: flex-start;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   font-weight: 400;
   text-align: center;
   color: #d4c5a3;
@@ -472,8 +472,8 @@ $imageURL: "https://picsum.photos/id/190/1920/1080";
 }
 /* individual offsets */
 .one { top: 10vh; }
-.two { top: 35vh; }
-.three { top: 60vh; }
+.two { top: 20vh; }
+.three { top: 40vh; }
 .one, .two, .three{
   // margin-top: -15%;
 }
@@ -484,8 +484,8 @@ $imageURL: "https://picsum.photos/id/190/1920/1080";
   .shimmer { font-size: clamp(1.5rem, 10vw, 3rem); }
 
   .one { top: 15vh; }
-  .two { top: 30vh; }
-  .three { top: 45vh; }
+  .two { top: 15vh; }
+  .three { top: 20vh; }
 }
 
 

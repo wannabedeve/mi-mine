@@ -29,7 +29,7 @@ export default function AboutLayout() {
                                     <div className="about-me">
                                         <div className="about-section">
                                             <h1>WHO I AM</h1>
-                                            <p>
+                                            {/* <p>
                                                 I am a Full-Stack Web Developer specializing in
                                                 <span className='hl'> business-critical
                                                     web systems</span> such as <span className='hl'> dashboards </span>,
@@ -38,6 +38,14 @@ export default function AboutLayout() {
                                                 <br />
                                                 My focus is on building <span className='hl'>reliable, maintainable </span> applications that support
                                                 real <span className='hl'> operational workflows </span>.
+                                            </p> */}
+                                            <p className='hl'>
+                                                I’m a Full-Stack Web Developer focused on building business platforms and internal systems that solve real workflow problems.
+
+                                                I help teams replace spreadsheets, emails, and manual processes with secure, scalable web solutions - including dashboards, CMS platforms, and backend APIs.
+
+                                                Previously, I worked with IT infrastructure, networking, and IoT systems, giving me strong practical awareness of production environments and system reliability.
+
                                             </p>
                                         </div>
                                         {/* <BuildMomentum /><br /><br /><br /><br /> */}
@@ -58,7 +66,7 @@ export default function AboutLayout() {
                                             <h1>My technical background</h1>
                                             <p>
                                                 Before focusing fully on web development,
-                                                I worked extensively with IT infrastructure, networking, IoT systems, and electronics.
+                                                I worked extensively with IT infrastructure, networking, <span className='hl'> IoT systems</span>, and electronics.
                                                 <br />
                                                 This background gives me a <span className="hl"> strong understanding </span> of <span className="hl"> servers</span>, <span className="hl"> networks</span>, <span className="hl"> devices</span>,
                                                 and <span className="hl"> real-world constraints</span>, allowing me to build software that <span className="hl"> performs reliably </span>

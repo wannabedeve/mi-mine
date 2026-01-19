@@ -274,9 +274,11 @@ export default function ContactMe() {
                         <br />
                         <input
                             type="submit"
-                            value="Send"
+                            value="Get a Free Workflow Review"
                             className="contact-input w-full"
-                        />
+                        >
+
+                        </input>
                     </form>
                 </section>
             </div>
