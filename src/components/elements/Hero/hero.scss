@@ -465,17 +465,17 @@ $imageURL: "https://picsum.photos/id/190/1920/1080";
   font-size: clamp(1rem, 4vw, 1.5rem);
 }
 .one{
-  margin-top: -15%;
+  // margin-top: -15%;
 }
 .two, .three {
   width: 80%;
 }
 /* individual offsets */
 .one { top: 10vh; }
-.two { top: 20vh; }
-.three { top: 40vh; }
-.one, .two, .three{
-  // margin-top: -15%;
+.two { top: 20vh; margin-top: 2%; }
+.three { top: 40vh; margin-top: 5%;}
+.one{
+  margin-top: -15%;
 }
 /* responsive offsets */
 @media (max-width: 768px) {
@@ -484,8 +484,8 @@ $imageURL: "https://picsum.photos/id/190/1920/1080";
   .shimmer { font-size: clamp(1.5rem, 10vw, 3rem); }
 
   .one { top: 15vh; }
-  .two { top: 15vh; }
-  .three { top: 20vh; }
+  .two { top: 30vh; }
+  .three { top: 45vh; margin-top: 10%; }
 }
 
 

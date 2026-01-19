@@ -63,7 +63,7 @@ export default function HomeIcon() {
 
 
             <a href="#contact-id">
-                <MessageCircleHeart size={40} />
+                <MessageCircleHeart size={40} color='#d4c5a399' />
             </a>
 
         </div>
