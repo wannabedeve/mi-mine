@@ -1,5 +1,6 @@
 'use client';
 
+import { LockKeyhole } from 'lucide-react';
 import { useState, useRef } from 'react';
 
 export default function BlogLayout() {
@@ -38,11 +39,12 @@ export default function BlogLayout() {
                 }}
             >
                 <div style={styles.avatar}>
-                    <img
+                    {/* <img
                         src="https://dummyimage.com/80x80/000/fff&text=User"
                         alt="User"
                         style={{ borderRadius: '50%' }}
-                    />
+                    /> */}
+                    <LockKeyhole />
                 </div>
                 <h2 style={styles.title}>Are You Khaled ?</h2>
                 <form onSubmit={handleSubmit}>
