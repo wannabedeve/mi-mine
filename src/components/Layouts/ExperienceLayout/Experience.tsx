@@ -109,11 +109,8 @@ export default function ExperienceLayout() {
                         scrollTrigger: {
                             trigger: card,
                             start: "top 50%",
-                            toggleActions: "play none none reverse",
-                            scrub: true,
-                        },
-                        scrub: true,
-
+                            toggleActions: "play none none reverse"
+                        }
                     }
                 );
             });
@@ -128,7 +125,6 @@ export default function ExperienceLayout() {
                 onEnterBack: () => activateTitle(title),
                 onLeave: () => deactivateTitle(title),
                 onLeaveBack: () => deactivateTitle(title),
-                scrub: true,
             });
 
             // const start = () => section.getBoundingClientRect().top + window.scrollY - 100;
@@ -166,7 +162,6 @@ export default function ExperienceLayout() {
                     pin: title,
                     pinSpacing: false,
                     anticipatePin: 1,
-                    scrub: true,
                 });
             });
 
@@ -181,7 +176,6 @@ export default function ExperienceLayout() {
 
                     pinSpacing: false,
                     anticipatePin: 1,
-                    scrub: true,
                 });
             });
         });
@@ -193,7 +187,6 @@ export default function ExperienceLayout() {
                 color: '#fff',
                 duration: 0.9,
                 ease: 'power2.out',
-                scrub: true,
             });
         }
 
@@ -203,7 +196,6 @@ export default function ExperienceLayout() {
                 color: '#fff',
                 duration: 1.2,
                 ease: 'power2.out',
-                scrub: true,
             });
         }
 
