@@ -3,6 +3,7 @@ import './about.css'
 // import SectionTitle from '@/components/ui/Heading/SectionTitle'
 // import { BuildMomentum } from '@/components/ui/feature/Feature'
 import Header from '@/components/ui/Header/Header'
+import InteractiveNetowrk from '@/components/elements/ImageViewer/MyNetworkWorks'
 
 
 export default function AboutLayout() {
@@ -153,10 +154,10 @@ export default function AboutLayout() {
                             {/* <BuildMomentum /><br /><br /><br /><br /> */}
 
                         </div>
-
                     </div>
                 </div>
             </div>
+            <InteractiveNetowrk />
 
 
         </>
