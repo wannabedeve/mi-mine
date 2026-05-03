@@ -69,6 +69,7 @@ const SelectiveFocus = () => {
           image={`${section.image}`}
           link={section.src}
           title={section.title}
+          src={section.src}
         />
       ))}
     </div>

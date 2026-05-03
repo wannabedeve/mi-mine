@@ -54,9 +54,10 @@ type Props = {
   image: string;
   link: string;
   title: string;
+  src: string;
 };
 
-export const SelectiveFocusSection = ({ image, link, title }: Props) => {
+export const SelectiveFocusSection = ({ image, link, title, src }: Props) => {
   const sectionRef = useRef<HTMLDivElement | null>(null);
 
   useSelectiveFocusGsap(sectionRef, true);
@@ -81,7 +82,7 @@ export const SelectiveFocusSection = ({ image, link, title }: Props) => {
           </div>
           <h2 className="outline-text">
             {title}
-            <a href="/contact" className="inline-link">↗</a>
+            <a href={src} className="inline-link">↗</a>
 
           </h2>
 

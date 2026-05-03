@@ -366,10 +366,10 @@
 
 import { useRef, useState } from 'react';
 import gsap from 'gsap';
-import './projects.scss';
 import { Project, projectsList } from '@/data/data';
 import Image from 'next/image';
 import Header from '@/components/ui/Header/Header';
+import './projects.scss';
 
 
 
